@@ -1,15 +1,36 @@
 <script>
-  import Header from '$lib/Header.svelte'
+  import Header from "$lib/Header.svelte";
+  import Card from "$lib/Card.svelte";
 </script>
 
 <Header />
 
 <main>
-  <h2>SvelteKit</h2>
+  <Card name="brick" src="/unpainted-brick.jpg" price="$20" />
 
-  <p>Welcome to coding with SvelteKit, a modern JavaScript framework that makes it easy to code great apps.</p>
+  <Card name="white brick" src="/white-brick.jpg" price="$20" />
+
+  <Card name="rough" src="/rough.jpg" price="$20" />
 </main>
 
 <footer>
   <p>&copy; Craighead Diocesan School 2024</p>
 </footer>
+
+<style>
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #051318;
+  }
+
+  footer {
+    background-color: #051318;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    font-size: 1rem;
+    font-family: "Russo One", sans-serif;
+    color: #89979c;
+  }
+</style>
